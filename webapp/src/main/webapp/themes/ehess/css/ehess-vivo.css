@@ -1,0 +1,982 @@
+/*Mine css*/
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('../fonts/GTWalsheim-Bold.eot');
+    src: url('../fonts/GTWalsheim-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTWalsheim-Bold.woff2') format('woff2'),
+    url('../fonts/GTWalsheim-Bold.woff') format('woff'),
+    url('../fonts/GTWalsheim-Bold.ttf') format('truetype'),
+    url('../fonts/GTWalsheim-Bold.svg#GTWalsheim-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('../fonts/GTWalsheim.eot');
+    src: url('../fonts/GTWalsheim.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTWalsheim.woff2') format('woff2'),
+    url('../fonts/GTWalsheim.woff') format('woff'),
+    url('../fonts/GTWalsheim.ttf') format('truetype'),
+    url('../fonts/GTWalsheim.svg#GTWalsheim') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background: none;
+    background-color: #f7f7f7;
+    background-image: url("../images/ehess-vivo/bg-stroke.gif");
+}
+
+body.vis #main-content, body.search .contentsBrowseGroup {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*Alert*/
+body .contentNote {
+    border: solid 2px red;
+}
+
+html body div#wrapper-content #welcome-msg-container {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 40%;
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    background-image: url("../images/ehess-vivo/title-bg.gif") !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border: solid 2px #eee !important;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 0px 500em rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 500em rgba(0, 0, 0, 0.5);
+    z-index: 99991;
+}
+
+html body div#wrapper-content #welcome-msg-container #welcome-message {
+
+    display: block;
+    text-align: center;
+    background-color: white;
+    height: content-box;
+    outline: none;
+    border: none;
+    margin: 2em 0 0 0;
+}
+
+/*End of Alert*/
+h1, #intro h2, h2, #home-faculty-mbrs > h4, #home-academic-depts h4, #home-stats h4, #home-research h4, #menupage-intro h2 {
+    color: #00aced;
+    font-size: 52px;
+    margin: 0.5em 0;
+    font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#home-academic-depts h4 {
+    color: #114e87;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+#intro h2 {
+    padding: 0;
+}
+
+#facultyThumbs h1 {
+    font-size: inherit;
+}
+
+.home h4, #home-faculty-mbrs > h4, #home-academic-depts h4, #home-stats h4, #home-research h4 {
+    background-color: transparent;
+    border: 0;
+    margin: 1em 0;
+    display: inline-block;
+}
+
+#login #login-form > div {
+    margin: 0 auto;
+    width: 50%;
+}
+
+html #wrapper-content, html nav.horiz-nav, html footer {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+/*Header*/
+#branding {
+    min-height: 12em;
+}
+
+#branding nav {
+    background-color: transparent;
+    height: auto;
+}
+
+ul.dropdown li#user-menu.hover, ul.dropdown li#user-menu:hover, ul.language-dropdown li#language-menu.hover, ul.language-dropdown li#language-menu:hover {
+    border-bottom: 0;
+    border-top-right-radius: 1em;
+}
+
+ul.sub_menu, #language-menu > ul:nth-child(2) > li:nth-child(2) {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+body ul.dropdown ul.sub_menu li a {
+    padding: 0.5em !important;
+}
+
+body ul.dropdown ul.sub_menu li, body ul.dropdown ul.sub_menu li a {
+    background-color: transparent;
+    background: transparent;
+}
+
+#user-menu > ul:nth-child(2) > li:nth-child(2) {
+    border-bottom: 0;
+}
+
+h1.vivo-logo {
+    background: url(../images/ehess-vivo/logo-white-lg.png) 0 0 no-repeat;
+    background-size: 80% !important;
+    height: 150px;
+}
+
+#header-nav {
+    background-color: white;
+    border-radius: 3em;
+    position: absolute;
+    top: 1em;
+    right: 0;
+}
+
+ul#header-nav {
+    width: auto;
+}
+
+ul#header-nav li a {
+    color: black;
+}
+
+#lang-link {
+    width: 99px;
+}
+
+/*END of Header*/
+/*Menu NAV*/
+html nav.horiz-nav {
+    display: table;
+    background-color: black;
+    height: 6em;
+    padding: 1em 0;
+
+}
+
+ul#main-nav {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    display: table;
+}
+
+#main-nav li {
+    background: none;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* webkit-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;*/
+    width: calc((100% / 4) - (1em - 1em / 4));
+    float: left;
+}
+
+#main-nav li:first-child {
+    background-image: url("../images/ehess-vivo/Nav-home.png");
+}
+
+#main-nav li:nth-child(2) {
+    background-image: url("../images/ehess-vivo/Nav-people.png");
+}
+
+#main-nav li:nth-child(3) {
+    background-image: url("../images/ehess-vivo/Nav-organiz.png");
+}
+
+#main-nav li:nth-child(4) {
+    background-image: url("../images/ehess-vivo/Nav-locations.png");
+}
+
+#main-nav li:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#main-nav li:hover:first-child {
+    background-image: url("../images/ehess-vivo/Nav-home.png");
+}
+
+#main-nav li:hover:nth-child(2) {
+    background-image: url("../images/ehess-vivo/Nav-people.png");
+}
+
+#main-nav li:nth-child(3):hover {
+    background-image: url("../images/ehess-vivo/Nav-organiz.png");
+}
+
+#main-nav li:nth-child(4):hover {
+    background-image: url("../images/ehess-vivo/Nav-locations.png");
+}
+
+@keyframes colorchange {
+    0% {
+        background: transparent;
+    }
+    10% {
+        background: #fd6868;
+    }
+    25% {
+        background: #017270;
+    }
+    50% {
+        background: #10fff7;
+    }
+    75% {
+        background: #017270;
+    }
+    100% {
+        background: #029797;
+    }
+}
+
+/* Safari and Chrome - necessary duplicate */
+@-webkit-keyframes colorchange {
+    0% {
+        background: transparent;
+    }
+    10% {
+        background: #fd6868;
+    }
+    25% {
+        background: #017270;
+    }
+    50% {
+        background: #10fff7;
+    }
+    75% {
+        background: #017270;
+    }
+    100% {
+        background: #029797;
+    }
+}
+
+#main-nav li a {
+    color: white;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-align: center;
+}
+
+#main-nav li a:hover {
+    /*color: #00aced;*/
+}
+
+#main-nav li a.selected {
+    color: #e3316b;
+    margin-left: 0;
+    background: none;
+}
+
+/*End NAV*/
+#wrapper-content {
+    padding: 0;
+}
+
+.section-width {
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-width.bg-header {
+    display: block;
+    padding: 0;
+    background: #a997f8 url(../images/ehess-vivo/header-bg.gif) 0 0 no-repeat; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #a997f8 0%, #17a4bf 50%, #2ab78e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #a997f8 0%, #17a4bf 50%, #2ab78e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #a997f8 0%, #17a4bf 50%, #2ab78e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a997f8', endColorstr='#2ab78e', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.section-width.bg-header .bg-img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 12em;
+    background: url(../images/ehess-vivo/header-bg.gif) 0 0 no-repeat; /* Old browsers */
+    background-size: cover;
+    opacity: 0.7;
+    filter: contrast(100%);
+    -webkit-filter: contrast(100%);
+}
+
+.section-width:nth-child(1) {
+}
+
+.section-width.bg-research {
+    background-color: #0f508a;
+}
+
+.section-width:nth-child(3) {
+}
+
+.section-width.bg-departments {
+    background-color: #7da7d9;
+    background-image: url("../images/ehess-vivo/dep-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    min-height: 423px;
+}
+
+.section-width.bg-departments a {
+    color: white;
+}
+
+.section-width.bg-departments li::marker {
+    background-color: white;
+}
+
+.section-width:nth-child(5) {
+}
+
+.section-width > section, #wrapper-content #home-academic-depts, #wrapper-content #home-faculty-mbrs, #home-stats, section#home-research.home-sections, body.loggedIn #intro, body #intro, #individual-intro.person, section#TabsList {
+
+    width: 60%;
+    display: block !important;
+    float: inherit;
+    margin: 0 auto !important;
+    background-color: transparent;
+    border: 0;
+}
+
+body.loggedIn #intro, body #intro {
+    display: table !important
+}
+
+#wrapper-content > section, #main-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: none;
+}
+
+html body.home.loggedIn div#wrapper-content section#home-stats.home-sections {
+    content: ""; /* Important, sinon l'élément n'est pas généré. */
+    display: table !important;
+    clear: both;
+}
+
+#home-research ul:last-child > li > a, ul[id^="viewMore"] li > a, div#academic-depts ul:last-child > li > a {
+    border: 2px solid #ff7067;
+    padding: .5em 1em;
+    border-radius: 3em;
+    margin: 3em 0;
+    display: inline-block;
+    float: left;
+    color: #ff7067;
+}
+
+/*Homepage*/
+body.home .search-home-width {
+    width: 60%;
+    margin: 0 auto !important;
+}
+
+/*Welcome*/
+#intro {
+    padding: 0;
+}
+
+.txt-intro {
+    width: 30%;
+    float: left;
+}
+
+.laptop-perspective {
+    width: 70%;
+    height: 600px;
+    float: right;
+    background-image: url("../images/ehess-vivo/interface.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+}
+
+#stats {
+    height: 300px;
+    display: inherit;
+    width: 100%;
+}
+
+#stats .stats-count span {
+    color: black;
+}
+
+#stats .stats-type {
+    color: black;
+}
+
+ul#stats li {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: top 2em center;
+    height: initial;
+    width: calc((92% / 4) - (1em - 1em / 4));
+    /*max-width: 160px;*/
+    float: left;
+    display: inline-table;
+    padding: 0;
+    margin-right: 1em;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0);
+    -moz-box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0);
+    box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top-left-radius: 10em;
+    border-top-right-radius: 10em;
+}
+
+ul#stats li:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0.75);
+    -moz-box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0.75);
+    box-shadow: inset 0px 0px 0px 5px rgba(185, 66, 130, 0.75);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    border-top-left-radius: 10em;
+    border-top-right-radius: 10em;
+    /*background-position: top 4em center;*/
+    background-size: 65%;
+    transform: scale(0.9);
+
+}
+
+ul#stats li:first-child {
+    background-image: url("../images/ehess-vivo/people.png");
+}
+
+ul#stats li:nth-child(2) {
+    background-image: url("../images/ehess-vivo/organiz.png");
+}
+
+ul#stats li:nth-child(3) {
+    background-image: url("../images/ehess-vivo/research.png");
+}
+
+ul#stats li:nth-child(4) {
+    background-image: url("../images/ehess-vivo/locations.png");
+}
+
+ul#stats li a {
+    /*padding-top: 1em;
+    margin-top: 11em;*/
+}
+
+ul#stats li a:hover {
+    opacity: 1;
+}
+
+#stats p.stats-count {
+    padding-top: 6em;
+    color: black;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#stats p.stats-type {
+    padding-bottom: 1em;
+}
+
+#stats li:hover p.stats-count {
+    color: #f33574;
+    /*font-size: 3.5em;
+    margin-top: -2em;*/
+}
+
+#stats li:hover p.stats-count span {
+    color: #f33574;
+    font-size: 1em;
+}
+
+#stats li:hover p.stats-type {
+    color: #f33574;
+    /*padding-bottom: 3em;*/
+}
+
+/*Faculty*/
+
+#facultyThumbs {
+    display: flex;
+}
+
+#facultyThumbs .individual {
+    display: grid;
+    float: left;
+    margin: 1em 1em 0 0;
+    width: calc((100% / 4) - (1em - 1em / 4));
+}
+
+#facultyThumbs .individual img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    image-rendering: crisp-edges;
+}
+
+#facultyThumbs .individual h1, #facultyThumbs .individual span {
+    text-align: center;
+}
+
+div#research-faculty-mbrs ul li.individual:first-child {
+    padding-top: 0;
+}
+
+.thumb {
+    padding: 0;
+    margin: 0;
+}
+
+/*End of Faculty*/
+
+/*fin home-stats*/
+/*Research*/
+#search-field {
+    background: none;
+    border-bottom: 1px white solid;
+}
+
+#search-field .search {
+    border-radius: 0;
+    height: 40px;
+    margin-left: 0.5em;
+    padding-left: 2em;
+    width: auto;
+    background-image: url('../images/ehess-vivo/search.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    margin-left: 1em;
+}
+
+/*.home #wrapper-content,.home #main-nav,.home footer{
+    width: 90vw;
+}
+class of different pages
+.about
+.termsOfUse
+.vis
+.organizations
+.people
+.display
+.entityEdit
+.propertyEdit
+.vclassEdit
+.listVClassWebapps
+.showClassHierarchy
+.listIndividuals
+.editForm*/
+
+/*person card */
+.bg-admin {
+    background-color: #f33b78;
+}
+
+.bg-admin #admin {
+    margin: 0 auto;
+    width: 60%;
+    background-color: transparent;
+}
+
+.bg-admin #admin .uri-link, .bg-admin #verbose-mode span {
+    color: white;
+}
+
+.bg-admin #admin a {
+    color: #fdcb0a;
+}
+
+.bg-admin #verbose-mode b {
+    color: black;
+}
+
+.display {
+
+}
+
+.bg-card {
+    background-image: url("../images/ehess-vivo/shad-bg.png");
+    background-position: bottom center;
+    background-repeat: repeat-x;
+}
+
+.display #wrapper-content {
+    background-color: transparent;
+}
+
+.display #share-contact, .display #individual-info {
+    background-color: white;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 1em;
+}
+
+#share-contact h2 a {
+    background-size: contain;
+    height: auto;
+}
+
+#share-contact img.individual-photo {
+
+}
+
+#individual-intro.person #individual-info {
+    width: 70%;
+}
+
+#individual-info h1.foaf-person {
+    font-size: 60px;
+}
+
+#individual-info h1.foaf-person span {
+    font-weight: bold;
+}
+
+#individual-info h2, article.property h3 {
+    font-size: 1.3em;
+    color: #002b2b;
+}
+
+#individual-info .add-individual, #individual-info .edit-relatedBy img, .edit-overview img, .delete-overview img, #individual-info .delete-relatedBy img, .edit-label img, a[class^="add-"] img {
+    visibility: hidden;
+}
+
+#individual-info .add-relatedBy, #individual-info .edit-relatedBy, .edit-overview, #individual-info .delete-relatedBy, .delete-overview, .edit-label, a[class^="add-"] {
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    opacity: 0.3;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#individual-info .add-relatedBy:hover, #individual-info .edit-relatedBy:hover, .edit-overview:hover, #individual-info .delete-relatedBy:hover, .delete-overview:hover, .edit-label:hover {
+    opacity: 1;
+}
+
+#individual-info .add-relatedBy, a[class^="add-"] {
+    background-image: url("../images/ehess-vivo/addicon-plus.png");
+}
+
+#individual-info .edit-relatedBy, .edit-overview, .edit-label {
+    background-image: url("../images/ehess-vivo/edit.png");
+}
+
+#individual-info .delete-relatedBy, .delete-overview {
+    background-image: url("../images/ehess-vivo/delete.png");
+}
+
+.bg-tablist {
+    background-image: url("../images/ehess-vivo/stroke-nav.png");
+    background-position: bottom 1px center;
+    background-repeat: no-repeat;
+    padding-bottom: 0.5em;
+}
+
+ul.propertyTabsList {
+
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: inherit;
+    z-index: 7;
+    height: 3em;
+    display: inline-block;
+    margin-bottom: -15px;
+
+}
+
+.bg-tablist li {
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    border-radius: 2em;
+    font-size: 1.05em !important;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.bg-tablist li:hover {
+    /* background-color: #2BB0ec;
+     -webkit-box-shadow: inset 0px 0px 0px 5px rgba(43,176,236,0.75);
+     -moz-box-shadow: inset 0px 0px 0px 5px rgba(43,176,236,0.75);
+     box-shadow: inset 0px 0px 0px 5px rgba(43,176,236,0.75);*/
+    background-image: url("../images/ehess-vivo/hover-stroke_L.png"), url("../images/ehess-vivo/hover-stroke_R.png");
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+    height: max-content;
+    color: #30ba86;
+}
+
+.bg-tablist li.selectedGroupTab {
+
+    background-image: url("../images/ehess-vivo/arrow-nav.png"), url("../images/ehess-vivo/focus-stroke_L.png"), url("../images/ehess-vivo/focus-stroke_R.png");;
+    background-position: bottom 2px center, top left, top right;
+    background-repeat: no-repeat;
+    transition: none;
+    font-weight: bold;
+    color: #f33574;
+    text-decoration: underline;
+}
+
+.bg-tablist li.selectedGroupTab:hover {
+    background-color: transparent;
+    box-shadow: none;
+    height: 100%;
+}
+
+article.property {
+    border: 0;
+    border-radius: 1em;
+    background-color: white;
+    overflow: hidden;
+}
+
+article.property h3 {
+    font-weight: bold;
+}
+
+article.property h3, article.property ul {
+    background-color: transparent;
+    padding: 1em;
+}
+
+#investigationGroup {
+
+}
+
+.display .property-group {
+    margin-top: 1em;
+    background: transparent;
+    border: 0;
+}
+
+body.display section.property-group h2 {
+    background: none !important;
+    background-image: url("../images/ehess-vivo/title-bg.gif") !important;
+    background-size: cover;
+    border-radius: 3em !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/*End CARD*/
+
+/*people page*/
+#menupage-intro {
+    background-color: transparent;
+}
+
+body.people #wrapper-content, body.people {
+    background-color: transparent;
+}
+
+body.people #wrapper-content {
+    background-image: url("../images/ehess-vivo/person-illu.png");
+    background-repeat: no-repeat;
+    background-position: top 0px right 30% !important;
+}
+
+body.organizations #wrapper-content {
+    background-image: url("../images/ehess-vivo/orga-illu.png");
+    background-repeat: no-repeat;
+    background-position: top 0px right 30% !important;
+}
+
+body.vis #wrapper-content {
+    background-image: url("../images/ehess-vivo/map-illu.png");
+    background-repeat: no-repeat;
+    background-position: top 54px right 30% !important;
+}
+
+body.vis #wrapper-content div > h2 {
+    margin: 15em 0 0 0;
+}
+
+#browse-by {
+    width: auto;
+}
+
+nav#alpha-browse-container {
+    border: none;
+    float: right;
+    margin-right: 17px;
+    margin-top: 7em;
+}
+
+ul#browse-classes {
+    border: none;
+    background-color: #f1f2ee;
+}
+
+body.people #browse-classes li {
+    float: left;
+    border: none;
+}
+
+#individuals-in-class {
+    border: none;
+}
+
+nav ul#browse-classes {
+    border-radius: 5px;
+    border: 1px solid #eee;
+    background-color: white;
+    width: 300px;
+    box-shadow: 1px 1px 0px rgba(00, 00, 00, 0.2);
+}
+
+nav ul#browse-classes li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+nav ul#browse-classes li:hover {
+    background-size: cover;
+    background-image: url("../images/ehess-vivo/header-bg.gif");
+    background-repeat: no-repeat;
+}
+
+nav ul#browse-classes li a {
+    margin: 0 0.5em;
+    color: #00aaff;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    font-family: "GT Walsheim", Helvetica, Arial, sans-serif;
+}
+
+nav ul#browse-classes li a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    font-weight: bold;
+    background-position: center left;
+}
+
+nav ul#browse-classes li a.selected {
+    background-position: center left;
+}
+
+nav ul#browse-classes li ul.dropdown-menu li {
+    background-image: none;
+}
+
+nav ul#browse-classes li ul.dropdown-menu li a {
+    color: white;
+}
+
+/*ul#browse-classes li#administrativeEntity ul.dropdown-menu + ul#browse-classes li#administrativeEntity a.selected{
+    color:white;
+}
+ul#browse-classes li#administrativeEntity ul.dropdown-menu ~ ul#browse-classes li#administrativeEntity a.selected{
+    color:white;
+}*/
+nav ul#browse-classes li ul.dropdown-menu li a:hover {
+    font-weight: bold;
+}
+
+nav ul#browse-classes li a span {
+    text-shadow: none;
+}
+
+#individuals-in-class ul li.individual {
+    width: 40%;
+    float: left;
+    min-height: 10em;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 0px rgba(00, 00, 00, 0.2);
+    margin: 0 30px 30px 0;
+    padding: 0.5em;
+}
+
+#individuals-in-class li h1 {
+    font-size: 1.4em;
+}
+
+/*SEARCH*/
+#search {
+    padding: 0.5em 0;
+}
+
+html body div#wrapper-content section#search {
+    position: inherit;
+    background-color: #e3316b;
+    width: 100%;
+}
+
+html body div#wrapper-content section#search fieldset form#search-form {
+    position: inherit;
+    background-color: #e3316b;
+    width: 100%;
+}
+
+html body div#wrapper-content section#search fieldset {
+    margin: 0 auto;
+    width: 60%;
+}
+
+/*footer*/
+footer nav {
+    background-color: transparent;
+}
+
+/*End of Mine css*/
