@@ -70,6 +70,14 @@ display:People
     display:urlMapping "/people" ;
    	display:hasDataGetter display:customPeopleDataGetter .
 
+display:Research 
+    a display:Page ;        
+    a display:ClassGroupPage;
+    display:forClassGroup vivoweb:vitroClassGrouppublications ;
+    display:title "Research" ;
+    display:urlMapping "/research" ;
+    display:hasDataGetter display:researchDataGetter .
+
 display:CapabilityMap
     a display:Page ;
     display:title "Capability Map" ;
@@ -81,6 +89,11 @@ display:customPeopleDataGetter
       a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassPeopleGroupPageData>;
       display:forClassGroup
               vivoweb:vitroClassGrouppeople .
+
+display:researchDataGetter
+      a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>;
+      display:forClassGroup
+              vivoweb:vitroClassGrouppublications .
 
 display:customOrganizationsDataGetter
       a <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassOrganizationGroupPageData>;

@@ -13,7 +13,6 @@
         <nav role="navigation">
             <ul id="header-nav" role="list">
                 <#include "languageSelectorWithoutFlags.ftl">
-                <#--<#include "languageSelector.ftl">-->
                 <li role="listitem"><a href="${urls.index}" title="${i18n().identity_index}">${i18n().identity_index}</a></li>
                 <#if user.loggedIn>
                     <#-- COMMENTING OUT THE EDIT PAGE LINK FOR RELEASE 1.5. WE NEED TO IMPLEMENT THIS IN A MORE
@@ -48,8 +47,8 @@
                     ${scripts.add('<script type="text/javascript" src="${urls.base}/js/userMenu/userMenuUtils.js"></script>')}
 
                 <#else>
-                    <li role="listitem"><a class="log-out" href="/loginExternalAuthReturn" title="${i18n().menu_login}">${i18n().menu_login}</a></li>
-                    <#--<li role="listitem"><a class="log-out" title="${i18n().menu_loginfull}" href="${urls.login}">${i18n().menu_login}</a></li>-->
+                    <#--li role="listitem"><a class="log-out" href="/loginExternalAuthReturn" title="${i18n().menu_login}">${i18n().menu_login}</a></li-->
+                    <li role="listitem"><a class="log-out" title="${i18n().menu_loginfull}" href="${urls.login}">${i18n().menu_login}</a></li>
                 </#if>
             </ul>
         </nav>

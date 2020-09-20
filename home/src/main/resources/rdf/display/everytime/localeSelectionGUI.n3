@@ -6,6 +6,9 @@
 
 @prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
  
+ #HACK EHESS added
+<freemarker:languageSelectorWithoutFlags.ftl> display:hasDataGetter display:localeSelectorDataGetter .
+#HACK EHESS END
 <freemarker:languageSelector.ftl> display:hasDataGetter display:localeSelectorDataGetter .
  
 display:localeSelectorDataGetter

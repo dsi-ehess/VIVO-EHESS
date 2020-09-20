@@ -979,4 +979,8 @@ footer nav {
     background-color: transparent;
 }
 
+.dropdown-menu{
+    display: none;
+}
+
 /*End of Mine css*/
