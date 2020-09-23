@@ -15,7 +15,7 @@
 <#import "lib-home-page.ftl" as lh>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="${country}">
     <head>
         <#include "head.ftl">
         <#if geoFocusMapsEnabled >
@@ -67,8 +67,6 @@
                 <p>${i18n().intro_para1}</p>
                 <p>${i18n().intro_para2}</p>
                 <p>${i18n().intro_para3}</p>
-             	<p> EHESS PAge home</p>
-
             </div>
             <div class="laptop-perspective">
 

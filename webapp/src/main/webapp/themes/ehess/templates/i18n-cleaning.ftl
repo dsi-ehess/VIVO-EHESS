@@ -3,7 +3,7 @@
 <@widget name="login" include="assets" />
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="${country}">
 <head>
         <#include "head.ftl">
 </head>
