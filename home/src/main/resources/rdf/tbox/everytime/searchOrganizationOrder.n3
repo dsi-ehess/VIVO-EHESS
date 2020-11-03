@@ -8,7 +8,7 @@ foaf:Organization
         vitro:displayRankAnnot  "1"^^xsd:int .
 
 vivo:Publisher
-        vitro:displayRankAnnot  "1"^^xsd:int .
+        vitro:displayRankAnnot  "2"^^xsd:int .
 
 vivo:University
         vitro:displayRankAnnot  "3"^^xsd:int .
