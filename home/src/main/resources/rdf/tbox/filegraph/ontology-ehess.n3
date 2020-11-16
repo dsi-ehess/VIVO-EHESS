@@ -76,7 +76,7 @@
   vitro:ontologyPrefixAnnot "vivoehess" ;
   rdfs:label "Vivo EHESS Ontology"@en-US ;
   rdfs:label "ontologie Vivo EHESS"@fr-FR ;
-  owl:imports vivoehess: ;
+  owl:imports vivofr: ;
   owl:imports <http://vivoweb.org/ontology/core> ;
   owl:versionInfo "Version 1.0 - 2018-04-03" ;
 .
