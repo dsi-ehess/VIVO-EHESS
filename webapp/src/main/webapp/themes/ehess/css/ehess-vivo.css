@@ -366,8 +366,8 @@ ul#main-nav {
 .section-width:nth-child(5) {
 }
 
-.section-width>section, #wrapper-content #home-academic-depts,
-    #wrapper-content>form.customForm, #wrapper-content>h2, #wrapper-content #home-faculty-mbrs,
+.section-width>section, #wrapper-content #home-academic-depts, #wrapper-content > div.editingForm, #wrapper-content > div.tab,
+    #wrapper-content > div#adminDashboard, #wrapper-content > div.staticPageBackground, #wrapper-content>form.customForm, #wrapper-content>h2, #wrapper-content #home-faculty-mbrs,
     #home-stats, section#home-research.home-sections, body.loggedIn #intro,
     body #intro, #individual-intro.person, section#TabsList {
     width: 60%;
