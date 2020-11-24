@@ -582,6 +582,7 @@ div#research-faculty-mbrs ul li.individual:first-child {
 }
 
 #search-field .search {
+    position: absolute;
     border-radius: 0;
     height: 40px;
     margin-left: 0.5em;
