@@ -367,7 +367,7 @@ ul#main-nav {
 }
 
 .section-width>section, #wrapper-content #home-academic-depts, #wrapper-content > div.editingForm, #wrapper-content > div.tab,
-    #wrapper-content > div#adminDashboard, #wrapper-content > div.staticPageBackground, #wrapper-content>form.customForm, #wrapper-content>h2, #wrapper-content #home-faculty-mbrs,
+    #wrapper-content > div#adminDashboard, #wrapper-content>form.customForm, #wrapper-content>h2, #wrapper-content #home-faculty-mbrs,
     #home-stats, section#home-research.home-sections, body.loggedIn #intro,
     body #intro, #individual-intro.person, section#TabsList {
     width: 60%;
@@ -376,6 +376,18 @@ ul#main-nav {
     margin: 0 auto !important;
     background-color: transparent;
     border: 0;
+}
+
+select[name=positionType] {
+    float: left;
+}
+
+p.keep-label-container {
+    float: left;
+}
+
+p.keep-label-container+section {
+    clear: left;
 }
 
 body.loggedIn #intro, body #intro {
