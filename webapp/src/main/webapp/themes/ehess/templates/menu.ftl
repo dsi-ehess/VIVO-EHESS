@@ -16,6 +16,10 @@
     <#if flash?has_content>
         <#if flash?starts_with(i18n().menu_welcomestart) >
             <section  id="welcome-msg-container" role="container">
+                <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" aria-disabled="false" title="close">
+                    <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span>
+                   <span class="ui-button-text">close</span>
+                </button>
                 <section  id="welcome-message" role="alert">${flash}</section>
             </section>
         <#else>
