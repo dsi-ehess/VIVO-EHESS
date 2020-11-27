@@ -50,7 +50,7 @@ html body div#wrapper-content #welcome-msg-container {
     top: 20%;
     left: 40%;
     width: 20%;
-    height: 300px;
+    height: max-content;
     background-color: white;
     background-image: url("../images/ehess-vivo/title-bg.gif") !important;
     background-repeat: no-repeat;
@@ -73,6 +73,12 @@ html body div#wrapper-content #welcome-msg-container #welcome-message {
     margin: 2em 0 0 0;
 }
 
+html body div#wrapper-content #welcome-msg-container .ui-button {
+    position: absolute;
+    right: 0.5em;
+    top: 0.3em;
+    font-size: 0.7em;
+}
 /*End of Alert*/
 h1, #intro h2, h2, #home-faculty-mbrs > h4, #home-academic-depts h4, #home-stats h4, #home-research h4, #menupage-intro h2 {
     color: #00aced;

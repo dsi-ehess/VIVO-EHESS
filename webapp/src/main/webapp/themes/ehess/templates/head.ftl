@@ -33,7 +33,7 @@
 <script type="text/javascript" src="${urls.base}/js/selectivizr.js"></script>
 <script type="text/javascript" src="${urls.base}/themes/ehess/js/homePageUtils.js"></script>
 <![endif]-->
-
+<script async type="text/javascript" src="${urls.base}/themes/ehess/js/ehessVitroUtils.js"></script>
 <#-- Inject head content specified in the controller. Currently this is used only to generate an rdf link on 
 an individual profile page. -->
 ${headContent!}
