@@ -366,14 +366,28 @@ ul#main-nav {
 .section-width:nth-child(5) {
 }
 
-.section-width > section, #wrapper-content #home-academic-depts, #wrapper-content #home-faculty-mbrs, #home-stats, section#home-research.home-sections, body.loggedIn #intro, body #intro, #individual-intro.person, section#TabsList {
-
+.section-width>section, #wrapper-content #home-academic-depts, #wrapper-content > div.editingForm, #wrapper-content > div.tab,
+    #wrapper-content > div#adminDashboard, #wrapper-content>form.customForm, #wrapper-content>h2, #wrapper-content #home-faculty-mbrs,
+    #home-stats, section#home-research.home-sections, body.loggedIn #intro,
+    body #intro, #individual-intro.person, section#TabsList {
     width: 60%;
     display: block !important;
     float: inherit;
     margin: 0 auto !important;
     background-color: transparent;
     border: 0;
+}
+
+select[name=positionType] {
+    float: left;
+}
+
+p.keep-label-container {
+    float: left;
+}
+
+p.keep-label-container+section {
+    clear: left;
 }
 
 body.loggedIn #intro, body #intro {
@@ -580,6 +594,7 @@ div#research-faculty-mbrs ul li.individual:first-child {
 }
 
 #search-field .search {
+    position: absolute;
     border-radius: 0;
     height: 40px;
     margin-left: 0.5em;

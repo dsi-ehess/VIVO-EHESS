@@ -83,7 +83,8 @@
                 </#if>
                 <!-- Positions -->
                 <#include "individual-positions.ftl">
-                <#include "individual-relatedMembers.ftl">
+                <!-- Memberships -->
+                <#include "individual-memberships.ftl">
             </header>
 
             <!-- Overview -->

@@ -1,7 +1,6 @@
-# baseURI: http://data.ehess.fr/ontology/vivo-ehess#
-# imports: http://data.ehess.fr/ontology/vivo-fr#
-# imports: http://vivoweb.org/ontology/core
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess
 
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess#> .
 @prefix acti: <http://vivoweb.org/ontology/activity-insight#> .
 @prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
 @prefix ai: <http://vivoweb.org/ontology/activity-insight#> .
@@ -18,7 +17,6 @@
 @prefix dcelem: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
-@prefix ehess: <http://data.ehess.fr/ontology/ehess#> .
 @prefix ero: <http://purl.obolibrary.org/obo/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
@@ -27,7 +25,6 @@
 @prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix geopolitical: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix hr: <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#> .
-@prefix j.0: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix local: <http://vivo.cornell.edu/ontology/local#> .
 @prefix mann: <http://vivo.cornell.edu/ns/mannadditions/0.1#> .
 @prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
@@ -62,16 +59,25 @@
 @prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
 @prefix vivo: <http://vivoweb.org/ontology/core#> .
 @prefix vivoc: <http://vivo.library.cornell.edu/ns/0.1#> .
-@prefix vivoehess: <http://data.ehess.fr/ontology/vivoehess#> .
+@prefix vivoehess: <http://data.ehess.fr/ontology/vivo-ehess#> .
 @prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix wcmc: <http://weill.cornell.edu/vivo/ontology/wcmc#> .
 @prefix wos: <http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://data.ehess.fr/ontology/vivo-ehess#>
+@prefix ehess-individual: <http://data.ehess.fr/individual/> .
+@prefix ehess-person: <http://data.ehess.fr/person/> .
+:
   a owl:Ontology ;
+  cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  terms:issued "2020-10-15"^^xsd:date ;
+  terms:rights "CC BY-SA 4.0" ;
+  vann:preferredNamespacePrefix "vivoehess" ;
+  vitro:ontologyPrefixAnnot "vivoehess" ;
+  rdfs:label "Vivo EHESS Ontology"@en-US ;
+  rdfs:label "ontologie Vivo EHESS"@fr-FR ;
   owl:imports vivofr: ;
   owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:versionInfo "Version 1.0 - 2018-04-03" ;
 .
 vivofr:PSE_0000001
   a owl:Class ;
@@ -80,20 +86,6 @@ vivofr:PSE_0000001
   vitro:isMenuPageIntersectionClass "true" ;
   rdfs:label "EHESS Member"@en-US ;
   rdfs:label "membre de l'EHESS"@en-US ;
-.
-vivoehess:
-  a owl:Ontology ;
-  cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  terms:creator <http://data.ehess.fr/person/cbrando> ;
-  terms:creator <http://data.ehess.fr/person/jdornbusch> ;
-  terms:issued "2020-10-15"^^xsd:date ;
-  terms:rights "CC BY-SA 4.0" ;
-  vann:preferredNamespacePrefix "vivoehess" ;
-  vitro:ontologyPrefixAnnot "vivofr" ;
-  rdfs:label "Vivo FR Ontology"@en-US ;
-  rdfs:label "ontologie Vivo FR"@fr-FR ;
-  owl:imports vivofr: ;
-  owl:versionInfo "Version 1.0 - 2018-04-03" ;
 .
 vivoehess:MBE_0000001
   a owl:Class ;
@@ -167,10 +159,4 @@ vivoehess:OGE_0000001
           vivofr:ORG_0000006
         ) ;
     ] ;
-.
-<http://data.ehess.fr/person/cbrando>
-  a foaf:Person ;
-.
-<http://data.ehess.fr/person/jdornbusch>
-  a foaf:Person ;
 .
