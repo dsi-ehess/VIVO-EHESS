@@ -1,14 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.vivoweb</groupId>
+    <groupId>fr.ehess</groupId>
     <artifactId>vivo-home-EHESS</artifactId>
     <version>1.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
-        <groupId>org.vivoweb</groupId>
+        <groupId>fr.ehess</groupId>
         <artifactId>vivo-EHESS</artifactId>
         <version>1.11.2-SNAPSHOT</version>
         <relativePath>..</relativePath>
@@ -63,7 +64,7 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.vivoweb</groupId>
+            <groupId>fr.ehess</groupId>
             <artifactId>vivo-home-fr_FR</artifactId>
             <type>tar.gz</type>
         </dependency>
