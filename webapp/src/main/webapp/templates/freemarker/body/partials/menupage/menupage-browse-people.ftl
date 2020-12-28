@@ -10,7 +10,7 @@
 
 <section id="noJavascriptContainer" class="hidden">
 <section id="browse-by" role="region">
-    <nav role="navigation">
+    <nav role="navigation" class="menu" id="menu">
         <ul id="browse-classes">
             <#list vClassGroup?sort_by("displayRank") as vClass>
             <#------------------------------------------------------------
@@ -29,7 +29,23 @@
                             <#else>
                                 ${vClass.name}
                             </#if>
-                            <span class="count-classes">(${vClass.entityCount})</span></a></li>
+                            <span class="count-classes">(${vClass.entityCount})</span></a>
+                            
+                            <#list vChildrenClassGroup?keys as key>
+                                <#if key == (vClass.URI) >
+                                    <#assign childs = (vChildrenClassGroup[key]) />
+    
+                                    <#list childs?sort_by("displayRank") as vClassChild>
+                                        <#if (vClassChild.entityCount > 0)>
+                                            <#assign vClassChildCamel = str.camelCase(vClassChild.name) />
+                                    <ul class="dropdown-menu">
+                                        <li id="${vClassChildCamel}"><a href="#${vClassChildCamel}" title="${i18n().browse_all_in_class}" data-uri="${vClassChild.URI}">${vClassChild.name} <span class="count-classes">(${vClassChild.entityCount})</span></a></li>
+                                    </ul>
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>    
+                        </li>
                     </#if>
                 </#if>
             </#list>
@@ -56,4 +72,12 @@
 </section>
 <script type="text/javascript">
     $('section#noJavascriptContainer').removeClass('hidden');
+    $(document).ready(function(){
+        $("#menu li").hover(function(){
+            $(".dropdown-menu", this).slideDown(100);
+        }, function(){
+            $(".dropdown-menu", this).stop().slideUp(100);
+        });
+    })
+
 </script>

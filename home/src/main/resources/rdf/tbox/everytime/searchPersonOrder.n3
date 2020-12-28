@@ -1,4 +1,5 @@
 @prefix ehess: <http://data.ehess.fr/ontology/vivo#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
@@ -6,19 +7,16 @@
 foaf:Person
         vitro:displayRankAnnot  "1"^^xsd:int .
 
-ehess:PersonnelDeSoutien
+vivofr:PRS_0000002
         vitro:displayRankAnnot  "2"^^xsd:int .
         
-ehess:EnseignantChercheur
+vivofr:PRS_0000011
         vitro:displayRankAnnot  "3"^^xsd:int .
 
-ehess:EnseignantChercheurEmerite
+vivofr:PRS_0000012
         vitro:displayRankAnnot  "4"^^xsd:int .
         
-ehess:Doctorant
+vivofr:PRS_0000006
         vitro:displayRankAnnot  "5"^^xsd:int .
-
-ehess:PostDoctorant
-        vitro:displayRankAnnot  "6"^^xsd:int .
 
 
