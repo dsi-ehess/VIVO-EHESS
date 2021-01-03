@@ -1,4 +1,5 @@
 @prefix ehess: <http://data.ehess.fr/ontology/vivo#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
@@ -13,12 +14,12 @@ vivo:Publisher
 vivo:University
         vitro:displayRankAnnot  "3"^^xsd:int .
 
-ehess:UniteDeRecherche
+vivo:ResearchOrganization
         vitro:displayRankAnnot  "4"^^xsd:int .
 
-ehess:ComposanteDUnite
+vivofr:ORG_0000008
         vitro:displayRankAnnot  "5"^^xsd:int .
         
-ehess:EntiteAdministrative
+vivofr:ORG_0000014
         vitro:displayRankAnnot  "6"^^xsd:int .
 
