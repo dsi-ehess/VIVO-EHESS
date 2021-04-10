@@ -318,7 +318,7 @@ ul#main-nav {
 .section-width {
     padding: 1em;
     display: inline-block;
-    width: auto;
+    width: 95%;
 }
 
 .section-width.bg-header {
